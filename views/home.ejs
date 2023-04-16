@@ -1,0 +1,33 @@
+<%- include('header'); -%>
+<h2 class="text-center addstudent mt-2">Our Achievements</h2>
+<div class="relative w-full my-8 p-4 py-10 border border-gray-300 rounded-md">
+  <div class="flex w-full flex-wrap gap-16 items-center justify-evenly">
+    <% placedStudents.forEach(function (placedStudent){ %>
+    <div
+      class="relative w-60 min-w-210 px-2 py-6 cursor-pointer hover:bg-card bg-gray-100 shadow-md rounded-lg flex flex-col items-center"
+    >
+      <div
+        class="w-45 min-w-[160px] h-40 min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden"
+      >
+        <img
+          class="w-full h-full rounded-lg object-cover"
+          src="<%= placedStudent.image%>"
+          alt=""
+        />
+      </div>
+      <p class="text-base text-center text-headingColor font-semibold my-2">
+        <%= placedStudent.name %>
+
+        <span class="block text-sm text-gray-400 my-1">
+          <%= placedStudent.company %>
+        </span>
+
+        <span class="block text-sm text-base my-1">
+          <%= placedStudent.salary %>
+        </span>
+      </p>
+    </div>
+
+    <% }) %>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+<%- include('header'); -%>
+
+<h2 class="text-center addstudent">Add New Hiring Companies</h2>
+<div>
+  <form action="/addcompany" method="post">
+    <div class="form-group mt-2 ml-4 mr-4">
+      <label>Name:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="name"
+        placeholder="Enter name of the Organization"
+      />
+    </div>
+    <div class="form-group mt-2 mt-2 ml-4 mr-4">
+      <label>Profile:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="profile"
+        placeholder="Enter hiring profile"
+      />
+    </div>
+    <div class="form-group mt-2 mt-2 ml-4 mr-4">
+      <label>Location :</label>
+      <input
+        type="text"
+        class="form-control"
+        name="location"
+        placeholder="Enter last date to apply"
+      />
+    </div>
+    <div class="form-group mt-2 mt-2 ml-4 mr-4">
+      <label>Salary :</label>
+      <input
+        type="text"
+        class="form-control"
+        name="salary"
+        placeholder="Enter last date to apply"
+      />
+    </div>
+    <div class="form-group mt-2 mt-2 ml-4 mr-4">
+      <label>Apply Link:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="link"
+        placeholder="Enter the apply link"
+      />
+    </div>
+    <div class="mt-2 ml-4">
+      <button type="submit" class="btn btn btn-outline-primary btn-lg">
+        ADD
+      </button>
+    </div>
+  </form>
+</div>

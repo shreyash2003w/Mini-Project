@@ -1,0 +1,32 @@
+<%- include('header'); -%>
+
+<h2 class="text-center addstudent mt-2">Add Students Information</h2>
+<div>
+    <form action="/addstudent" method="post">
+
+        <div class="form-group mt-2 ml-4 mr-4">
+            <label>Name:</label>
+           <input type="text" class="form-control" name="name" placeholder="Enter name ...">
+        </div>
+
+        <div class="form-group mt-2 mt-2 ml-4 mr-4">
+            <label>Company:</label>
+            <input type="text" class="form-control" name="company" placeholder="Enter name of company">
+        </div>
+
+        <div class="form-group mt-2 mt-2 ml-4 mr-4">
+            <label>Salary:</label>
+            <input type="text" class="form-control" name="salary" placeholder="Enter Salary">
+        </div>
+
+        <div class="form-group mt-2 mt-2 ml-4 mr-4">
+            <label>Image:</label>
+            <input type="text" class="form-control" name="image" placeholder="Enter image url">
+        </div>
+        
+        <div class="mt-2 ml-4" >
+          <button type="submit" class="btn btn btn-outline-primary btn-lg">ADD</button>
+        </div>
+        
+    </form>
+</div>
