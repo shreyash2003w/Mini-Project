@@ -10,6 +10,8 @@ const bodyParser = require("body-parser");
 const Student = require("./models/students");
 const Company = require("./models/company");
 var path = require("path");
+const PORT = process.env.PORT || 3000
+
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(express.static(path.join()));
@@ -67,6 +69,6 @@ app.post("/addstudent", function (req, res) {
   newStudent.save().then(res.render("addstudent"));
 });
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
+app.listen(PORT, () => {
+  console.log(`Listening on port ${PORT} `);
 });
