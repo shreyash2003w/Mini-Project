@@ -14,9 +14,7 @@
   "name": "mini-project",
   "version": "1.0.0",
   "main": "app.js",
-  "engines": {
-    "node" : "14.x"
-  },
+  
   "devDependencies": {},
   "repository": {
     "type": "git",
@@ -26,7 +24,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shreyash2003w/Mini-Project/issues"
-  },
-  "homepage": "https://github.com/shreyash2003w/Mini-Project#readme",
+  },  "homepage": "https://github.com/shreyash2003w/Mini-Project#readme",
   "description": ""
 }
