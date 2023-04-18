@@ -11,16 +11,15 @@ const Student = require("./models/students");
 const Company = require("./models/company");
 var path = require("path");
 const PORT = process.env.PORT || 3000
-
+require("dotenv/config")
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(express.static(path.join()));
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Database Connection
-const url =
-  "mongodb://shreyashwaghmare2019:admin@ac-pcleql1-shard-00-00.0d5yfla.mongodb.net:27017,ac-pcleql1-shard-00-01.0d5yfla.mongodb.net:27017,ac-pcleql1-shard-00-02.0d5yfla.mongodb.net:27017/?ssl=true&replicaSet=atlas-p2esrc-shard-0&authSource=admin&retryWrites=true&w=majority";
-mongoose.connect(url, { useNewUrlParser: true });
+
+mongoose.connect(process.env.DB_STRING, { useNewUrlParser: true });
 mongoose.connection
   .once("open", () => console.log("database Connected"))
   .on("error", (error) => {
