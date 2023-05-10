@@ -1,129 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-     tailwind.config={  
-  theme: {
-    extend: {
-      width: {
-        150: "150px",
-        190: "190px",
-        225: "225px",
-        275: "275px",
-        300: "300px",
-        340: "340px",
-        350: "350px",
-        375: "375px",
-        460: "460px",
-        656: "656px",
-        880: "880px",
-        508: "508px",
-      },
-      height: {
-        80: "80px",
-        150: "150px",
-        225: "225px",
-        300: "300px",
-        340: "340px",
-        370: "370px",
-        420: "420px",
-        510: "510px",
-        600: "600px",
-        650: "650px",
-        685: "685px",
-        800: "800px",
-        "90vh": "90vh",
-      },
-      minWidth: {
-        210: "210px",
-        350: "350px",
-        620: "620px",
-      },
-      screens: {
-        sm: "640px",
-        md: "768px",
-        lg: "1024px",
-        xl: "1280px",
-        "2xl": "1536px",
-      },
-      colors: {
-        headingColor: "#2e2e2e",
-        textColor: "#515151",
-        cartNumBg: "#e80013",
-        primary: "#f5f3f3",
-        cardOverlay: "rgba(256,256,256,0.4)",
-        darkOverlay: "rgba(0,0,0,0.5)",
-        lightOverlay: "rgba(256,256,256,0.2)",
-        lighttextGray: "#9ca0ab",
-        card: "rgba(256,256,256,0.8)",
-        cartBg: "#282a2c",
-        cartItem: "#2e3033",
-        cartTotal: "#343739",
-        loaderOverlay: "rgba(256,256,256,0.1)",
-      },
-    },
-  },
-  plugins: [require("tailwind-scrollbar")],
-}
+      tailwind.config = {
+        theme: {
+          extend: {
+            width: {
+              150: "150px",
+              190: "190px",
+              225: "225px",
+              275: "275px",
+              300: "300px",
+              340: "340px",
+              350: "350px",
+              375: "375px",
+              460: "460px",
+              656: "656px",
+              880: "880px",
+              508: "508px",
+            },
+            height: {
+              80: "80px",
+              150: "150px",
+              225: "225px",
+              300: "300px",
+              340: "340px",
+              370: "370px",
+              420: "420px",
+              510: "510px",
+              600: "600px",
+              650: "650px",
+              685: "685px",
+              800: "800px",
+              "90vh": "90vh",
+            },
+            minWidth: {
+              210: "210px",
+              350: "350px",
+              620: "620px",
+            },
+            screens: {
+              sm: "640px",
+              md: "768px",
+              lg: "1024px",
+              xl: "1280px",
+              "2xl": "1536px",
+            },
+            colors: {
+              headingColor: "#2e2e2e",
+              textColor: "#515151",
+              cartNumBg: "#e80013",
+              primary: "#f5f3f3",
+              cardOverlay: "rgba(256,256,256,0.4)",
+              darkOverlay: "rgba(0,0,0,0.5)",
+              lightOverlay: "rgba(256,256,256,0.2)",
+              lighttextGray: "#9ca0ab",
+              card: "rgba(256,256,256,0.8)",
+              cartBg: "#282a2c",
+              cartItem: "#2e3033",
+              cartTotal: "#343739",
+              loaderOverlay: "rgba(256,256,256,0.1)",
+            },
+          },
+        },
+        plugins: [require("tailwind-scrollbar")],
+      };
     </script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;900&family=Sacramento&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../public/css/style.css" />
+  </head>
 
+  <body>
+    <header>
+      <nav
+        class="flex flex-wrap items-center justify-between w-full md:py-0 px-4 text-lg text-gray-900 bg-white md:shadow-lg"
+      >
+        <div class="text-lg font-bold md:py-0 py-4">
+          <a href="/"> HireVu </a>
+        </div>
 
-<!-- Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          id="menu-button"
+          class="h-6 w-6 cursor-pointer md:hidden block"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
 
-<!-- CSS Style -->
-<link rel="stylesheet" href="../public/css/style.css">
+        <div class="hidden w-full md:flex md:items-center md:w-auto" id="menu">
+          <ul
+            class="pt-4 text-base text-gray-700 md:flex md:justify-between md:pt-0"
+          >
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="/"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="/company"
+                >Companies</a
+              >
+            </li>
+            <li>
+              <a class="md:p-4 py-2 block hover:text-purple-400" href="/aboutus"
+                >About Us</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-</head>
-<body>
-  
- 
-  <nav class="  flex px-4 border-b md:shadow-lg items-center relative">
-    <div class="text-lg font-bold md:py-0 py-4">
-      <a href="/"> HireVu</a>
-    </div>
-    <ul class="md:px-2 ml-auto md:flex md:space-x-2 absolute md:relative top-full left-0 right-0">
-        <li>
-            <a href="/" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
-                <span>Home</span>
-            </a>
-        </li>
-        <li>
-            <a href="/company" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
-                <span>Companies</span>
-            </a>
-        </li>
-        <li>
-            <a href="/aboutus" class="flex md:inline-flex p-4 items-center hover:bg-gray-50">
-                <span>About us</span>
-            </a>
-        </li>
-    </ul>
-    <div class="ml-auto md:hidden text-gray-500 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
-    </div>
+    <script>
+      const button = document.querySelector("#menu-button");
+      const menu = document.querySelector("#menu");
 
- 
-</nav>
-
-
-
- 
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
 </html>
